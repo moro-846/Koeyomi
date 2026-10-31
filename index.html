@@ -7287,7 +7287,7 @@ const SettingsView = {
         // which model draws the timeline: the standard one, or Nemotron (試験)
         const ENG_HINT = {
           pyannote: '標準: pyannote segmentation 3.0（約6MB）。軽く、どの端末でも動きます。声の似た2人を1人と見なすことがあります。',
-          nemotron: '高精度（試験）: NVIDIA Nemotron 3 Diarization（約120MB）。会話の最初から人ごとに番号を付け続けるので、2人を1人にまとめる誤りが大きく減ります（会議の録音での検証で、1人分の吹き出しに2人が混ざる時間が約6分の1）。処理の速い端末が必要で、話す人の区切りを正しく入れるため文字は約2〜3秒遅れて出ます。端末が遅すぎるときは自動で標準に戻ります。',
+          nemotron: '高精度（試験）: NVIDIA Nemotron 3 Diarization（約120MB）。会話の最初から人ごとに番号を付け続けるので、2人を1人にまとめる誤りが大きく減ります（会議の録音での検証で、発言が正しい人に割り当てられる割合が約8割から約9割に、違う人の名前が出る誤りはほぼ半分に）。処理の速い端末が必要で、話す人の区切りを正しく入れるため文字は約2〜3秒遅れて出ます。端末が遅すぎるときは自動で標準に戻ります。',
         };
         const engHint = h('p', { class: 'hint', text: ENG_HINT[S.get('segEngine')] || ENG_HINT.pyannote });
         const nemoLine = h('p', { class: 'hint', role: 'status' });
