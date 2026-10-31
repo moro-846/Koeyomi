@@ -4,6 +4,7 @@
 
 開くアドレス: https://moro-846.github.io/koeyomi/
 
+- 精度を測る版（動作確認版）: https://moro-846.github.io/Koeyomi/test.html （会話の履歴で話者を直して、結果を書き出せます）
 - マイクを使うため、https のアドレスで開いてください（保存したファイルを直接開くとマイクが使えません）。
 - Gemini の APIキーや登録した声は、使っている端末の中にだけ保存されます。
 
